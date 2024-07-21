@@ -1,7 +1,8 @@
 # Oger-Labs
+The Offical Plugin for Oger-Labs!
 
 Requires Minecraft Version 1.20.6
-Requires Plugin NBT API https://www.spigotmc.org/resources/nbt-api.7939/
+Requires Plugin ![NBT API](https://www.spigotmc.org/resources/nbt-api.7939/)
 
 ![SpigotMC Downloads](https://img.shields.io/spiget/downloads/86771?label=SpigotMC%20Downloads)
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/CsFp0oQj?label=Modrinth%20Downloads)
@@ -14,7 +15,7 @@ Requires Plugin NBT API https://www.spigotmc.org/resources/nbt-api.7939/
 
 
 
-[SpigotMC link](https://www.spigotmc.org/resources/sneak-fart.86771/)
+[SpigotMC link](https://github.com/FOrt304/Oger-Labs)
 
 it uses [Maven](https://maven.apache.org/) compile with `mvn package`
 

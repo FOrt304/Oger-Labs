@@ -1,0 +1,203 @@
+# Plugin version 1.5.5
+
+sendmsgyourself: true
+# This item is needed to be able to send a message to yourself
+# Accepts only values 'true' and 'false'
+# Default: false
+
+msgsound: 'true'
+# By default, the sound is turned off 'false', but you can change it
+# It is necessary to indicate the name of the sound in uppercase and with underscores
+# Example - msgsound: 'ENTITY_PLAYER_LEVELUP'
+# All sounds you can find here - https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+# Unfortunately not all of these sounds can be reproduced correctly
+# Therefore, if the sound doesn't work and gives an error, then you should change the sound
+
+volumesound: 50
+# By default, the volume of notification sounds is set to '50', but it can be changed
+# The volume value must be specified in the range from '0' to '100'
+
+messages:
+  error: '&#ff5555Error'
+
+  configreloadsuccessfully: '&#55ff55The plugin config was successfully reloaded'
+
+  notmsgyouself: '&#ffff55You cannot send message yourself'
+  playermissing: '&#ff5555This player is not on the server'
+  msgsendoffline: '&#ffff55Send this player an offline message?'
+
+  acceptsend: '§eAccept§r §b§l[✔]§r'
+  # I don't recommend setting the color of this message using HEX encoding, as the color will be displayed incorrectly
+
+  clickmsgsendoffline: 'Click to send offline message'
+  msgsendofflinesuccessfully: "&#55ff55You have successfully sent an offline message"
+
+  msgsenderpattern: '&#55ffff§l[§r&#ffff55%sender%§r &#55ffff§l->§r &#ffff55%receiver%§r&#55ffff§l]§r &#ffff55%message%§r'
+  msgreceiverpattern: '&#55ffff§l[§r&#ffff55%sender%§r &#55ffff§l->§r &#ffff55%receiver%§r&#55ffff§l]§r &#ffff55%message%§r'
+  msgofflinepattern: '&#55ffff§l[§r&#ffff55%sender%§r&#55ffff§l]§r &#55ffff§l->§r &#ffff55%messages%§r'
+  # In order to change the color of the message, you need to specify the '&' icon, followed by the color code in HEX format with '#' at the beginning
+  # You can also change the color using standard Minecraft colors by specifying '§' at the beginning
+  # The '§r' icon is used to reset the color and the '§l' icon is used to make the font bold
+  # All codes you can find here - https://minecraft.fandom.com/wiki/Formatting_codes
+  # Variables are indicated between '%' signs (I don't recommend changing them)
+
+  soundmissing: '&#ff5555Invalid sound value'
+  soundsuccess: '&#55ff55The sound has been successfully changed'
+
+  volumemissing: '&#ff5555Invalid volume value'
+  volumesuccess: '&#55ff55The volume has been successfully changed'
+
+  blmissing: '&#ff5555Invalid player value'
+  blyourself: '&#ff5555You cannot add yourself to the blacklist'
+  blsuccessblock: '&#55ff55The player was successfully blocked'
+  blalreadyblock: '&#ff5555This player is already blocked'
+  blnotblock: '&#ff5555This player is not on the blacklist'
+  blsuccessunblock: '&#55ff55The player has been successfully unblocked'
+
+  youinbl: '&#ff5555You cannot send messages to this player'
+  youbl: '&#ffff55You have blocked this player'
+
+  emptybl: '&#ffff55Your blacklist is empty'
+  playersbl: '&#55ffffPlayers from your blacklist: §r&#ffff55'
+
+  haveunreadmsg: "&#55ffffYou have unread messages:"
+
+helpmessages:
+  consolehelplist: '[Oger-Labs] ⏴-------Oger-Labs-------⏵
+                    
+                    [Oger-Labs] Command: msghelp
+                    
+                    [Oger-Labs] Description: This command allows you to display all possible plugin commands
+                    
+                    [Oger-Labs] Usage: /<command>
+                    
+                    [Oger-Labs]
+                    
+                    [Oger-Labs] Command: msgrc
+                    
+                    [Oger-Labs] Description: This command allows you to reload the plugin config
+                    
+                    [Oger-Labs] Usage: /<command>
+                    
+                    [Oger-Labs]
+                    
+                    [Oger-Labs] Command: msg
+                    
+                    [Oger-Labs] Description: This command allows you to send private messages to the player
+                    
+                    [Oger-Labs] Usage: /<command> <player> <message>
+                    
+                    [Oger-Labs]
+                    
+                    [Oger-Labs] Command: acceptsend
+                    
+                    [Oger-Labs] Description: This command allows you to accept sending an offline message
+                    
+                    [Oger-Labs] Usage: /<command>
+                    
+                    [Oger-Labs]
+                    
+                    [Oger-Labs] Command: csound
+                    
+                    [Oger-Labs] Description: This command allows you to change the notification sound
+                    
+                    [Oger-Labs] Usage: /<command> <sound>
+                    
+                    [Oger-Labs]
+                    
+                    [Oger-Labs] Command: cvolume
+                    
+                    [Oger-Labs] Description: This command allows you to change the notification volume
+                    
+                    [Oger-Labs] Usage: /<command> <volume>
+                    
+                    [Oger-Labs]
+                    
+                    [Oger-Labs] Command: addbl
+                    
+                    [Oger-Labs] Description: This command allows you to add players to the blacklist
+                    
+                    [Oger-Labs] Usage: /<command> <player>
+                    
+                    [Oger-Labs]
+                    
+                    [Oger-Labs] Command: removebl
+                    
+                    [Oger-Labs] Description: This command allows you to remove players from the blacklist
+                    
+                    [Oger-Labs] Usage: /<command> <player>
+                    
+                    [Oger-Labs]
+                    
+                    [Oger-Labs] Command: showbl
+                    
+                    [Oger-Labs] Description: This command allows you to display your blacklist
+                    
+                    [Oger-Labs] Usage: /<command>
+                    
+                    [Oger-Labs] ⏴----------------------------⏵'
+  playerhelplist: '§b§l⏴-------§r§e§lOger-Labs§r§b§l-------⏵§r
+  
+                    §bCommand:§r §emsghelp§r
+                    
+                    §bDescription:§r §eThis command allows you to display all possible plugin commands§r
+                    
+                    §bUsage:§r §e/<command>§r
+                    
+                    
+                    §bCommand:§r §emsgrc§r
+                    
+                    §bDescription:§r §eThis command allows you to reload the plugin config§r
+                    
+                    §bUsage:§r §e/<command>§r
+                    
+                    
+                    §bCommand:§r §emsg§r
+                    
+                    §bDescription:§r §eThis command allows you to send private messages to the player§r
+                    
+                    §bUsage:§r §e/<command> <player> <message>§r
+                    
+                    
+                    §bCommand:§r §eacceptsend§r
+                    
+                    §bDescription:§r §eThis command allows you to accept sending an offline message§r
+                    
+                    §bUsage:§r §e/<command>§r
+                    
+                    
+                    §bCommand:§r §ecsound§r
+                    
+                    §bDescription:§r §eThis command allows you to change the notification sound§r
+                    
+                    §bUsage:§r §e/<command> <sound>§r
+                    
+                    
+                    §bCommand:§r §ecvolume§r
+                    
+                    §bDescription:§r §eThis command allows you to change the notification volume§r
+                    
+                    §bUsage:§r §e/<command> <volume>§r
+                    
+                    
+                    §bCommand:§r §eaddbl§r
+                    
+                    §bDescription:§r §eThis command allows you to add players to the blacklist§r
+                    
+                    §bUsage:§r §e/<command> <player>§r
+                    
+                    
+                    §bCommand:§r §eremovebl§r
+                    
+                    §bDescription:§r §eThis command allows you to remove players from the blacklist§r
+                    
+                    §bUsage:§r §e/<command> <player>§r
+                    
+                    
+                    §bCommand:§r §eshowbl§r
+                    
+                    §bDescription:§r §eThis command allows you to display your blacklist§r
+                    
+                    §bUsage:§r §e/<command>§r
+                    
+                    §b§l⏴----------------------------⏵§r'

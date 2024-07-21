@@ -1,0 +1,154 @@
+name: OgerLabs
+version: '1.5.5' # ${project.version}
+main: net.al0046.ogerlabs.OgerLabs
+api-version: '1.20'
+authors: [ FOrt404 ]
+description: Plugin for FORTYUKON Oger-Labs Server
+commands:
+  fart:
+    description: Makes a fart sound
+    usage: /fart
+    permission: ogerlabs.fart
+  fortyukon:
+    description: Provides information about Fort Yukon
+    usage: /fortyukon
+    permission: ogerlabs.fortyukon
+  oger:
+    description: Gives the most oger overpowered item in fort yukon :)
+    usage: /oger
+    permission: ogerlabs.oger
+  hug:
+    description: Sends a hug message to another player
+    usage: /hug <player>
+    permission: ogerlabs.hug
+  starttag:
+    description: Starts a Tag minigame
+    usage: /starttag
+    permission: ogerlabs.starttag
+  jointag:
+    description: Join the Tag minigame
+    usage: /jointag
+    permission: ogerlabs.jointag
+  endtag:
+    description: Ends the Tag minigame
+    usage: /endtag
+    permission: ogerlabs.endtag
+  cheese:
+    description: Gives the player a piece of cheese
+    usage: /cheese
+    permission: ogerlabs.cheese
+  startchess:
+    description: Starts a chess game
+    usage: /startchess
+    permission: ogerlabs.startchess
+  endchess:
+    description: Ends your current chess game
+    usage: /endchess
+    permission: ogerlabs.endchess
+  spawncrate:
+    description: Spawns a supply crate at a random location
+    usage: /spawncrate
+    permission: ogerlabs.spawncrate
+  spawncat:
+    description: Spawns a custom cat called King Yuki of Fort Yukon
+    usage: /spawncat
+    permission: ogerlabs.spawncat
+  kit:
+    description: Kit that gives you Diamonds and Bricks
+    usage: /kit
+    permission: ogerlabs.kit
+  heal:
+    description: Heals the player
+    usage: /heal
+    permission: ogerlabs.heal
+  feed:
+    description: Feeds the player
+    usage: /feed
+    permission: ogerlabs.feed
+  msghelp:
+    description: This command allows you to display all possible plugin commands
+    permission: ogerlabs.msg.msghelp
+    usage: /<command>
+    aliases:
+      - msgh
+  msgreloadconfig:
+    description: This command allows you to reload the plugin config
+    permission: ogerlabs.msg.msgreloadconfig
+    usage: /<command>
+    aliases:
+      - msgrc
+  playermsg:
+    description: This command allows you to send private messages to the player
+    permission: ogerlabs.msg.playermsg
+    usage: /<command> <player> <message>
+    aliases:
+      - pm
+      - msg
+      - message
+      - tell
+  acceptsend:
+    description: This command allows you to accept sending an offline message
+    permission: ogerlabs.msg.acceptsend
+    usage: /<command>
+    aliases:
+      - accsend
+  changesound:
+    description: This command allows you to change the notification sound
+    permission: ogerlabs.msg.changesound
+    usage: /<command> <sound>
+    aliases:
+      - cs
+      - csound
+  changevolume:
+    description: This command allows you to change the notification volume
+    permission: ogerlabs.msg.changevolume
+    usage: /<command> <volume>
+    aliases:
+      - cv
+      - cvolume
+  addblacklist:
+    description: This command allows you to add players to the blacklist
+    permission: ogerlabs.msg.addblacklist
+    usage: /<command> <player>
+    aliases:
+      - addbl
+  removeblacklist:
+    description: This command allows you to remove players from the blacklist
+    permission: ogerlabs.msg.removeblacklist
+    usage: /<command> <player>
+    aliases:
+      - removebl
+  showblacklist:
+    description: This command allows you to display your blacklist
+    permission: ogerlabs.msg.showblacklist
+    usage: /<command>
+    aliases:
+      - showbl
+permissions:
+  ogerlabs.msg.msghelp:
+    description: Permission to use command msghelp
+    default: true
+  ogerlabs.msg.msgreloadconfig:
+    description: Permission to use command msgrc
+    default: op
+  ogerlabs.msg.playermsg:
+    description: Permission to use command msg
+    default: true
+  ogerlabs.msg.acceptsend:
+    description: Permission to use command acceptsend
+    default: true
+  ogerlabs.msg.changesound:
+    description: Permission to use command csound
+    default: true
+  ogerlabs.msg.changevolume:
+    description: Permission to use command cvolume
+    default: true
+  ogerlabs.msg.addblacklist:
+    description: Permission to use command addbl
+    default: true
+  ogerlabs.msg.removeblacklist:
+    description: Permission to use command removebl
+    default: true
+  ogerlabs.msg.showblacklist:
+    description: Permission to use command showbl
+    default: true

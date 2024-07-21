@@ -42,7 +42,7 @@ public final class OgerLabs extends JavaPlugin {
         saveDefaultConfig();
 
         try {
-            sql = new SqliteDriver(getDataFolder() + "/smpdatabase.db");
+            sql = new SqliteDriver(getDataFolder() + "/ogerlabs.db");
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
         }

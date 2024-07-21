@@ -13,7 +13,7 @@ public class FortYukon extends JavaPlugin implements CommandExecutor {
             if (sender instanceof Player) {
                 Player player = (Player) sender;
                 player.sendMessage("Fort Yukon is a city in the Yukon-Koyukuk Census Area, Alaska, United States. It is located on the north bank of the Yukon River.");
-                player.sendMessage("Fort Yukon has a population of about 583 people.");
+                player.sendMessage("Fort Yukon has a population of about 583.000 people.");
                 player.sendMessage("It is known for its extreme weather conditions, often recording some of the highest and lowest temperatures in Alaska.");
                 return true;
             } else {
